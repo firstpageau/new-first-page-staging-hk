@@ -1,15 +1,5 @@
-roi
+Blocks master Theme
 ===
-
-Hi. This is a blank theme called "roi" created by Deb with the help of _s.
-
-This theme supports woocommerce as well.
-
-Download theme from https://firstpage.webconcierge.com.au
-
-
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
-
 * A just right amount of lean, well-commented, modern, HTML5 templates.
 * A helpful 404 template.
 * A custom header implementation in `inc/custom-header.php` just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.

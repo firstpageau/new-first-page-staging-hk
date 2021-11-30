@@ -45,10 +45,12 @@
 											<div class="card-body">
 												<h3 class="card-title capitalize"><?php the_sub_field('heading'); ?></h3>
 												<p class="card-text min-height"><?php the_sub_field('content'); ?></p>
+												<div class="card-bullets">
 												<?php if(get_sub_field('below_content')): ?>
 													<h4>Start with…</h4>
 													<?php echo get_sub_field('below_content'); ?>
 												<?php endif; ?> 
+												</div>
 											</div>
 											<?php 
 											$link = get_sub_field('cta');
@@ -75,7 +77,11 @@
 			<h3 class="font-weight-normal"><?php the_sub_field('subheading_slider'); ?></h3>
 		</div>
 
-		<div class="services-carousel-lg d-none d-lg-block">
+		<?php 
+			$carousel_counter = get_sub_field('heading_slider');
+			$carousel_id = str_replace(' ', '-', $carousel_counter) + '-' + $i++; ?>
+
+		<div class="services-carousel-lg d-none d-lg-block <?php echo $carousel_id; ?>">
 			
 			<?php if( have_rows('main_repeater') ): ?>
 				<?php while( have_rows('main_repeater') ): the_row(); 
@@ -87,10 +93,12 @@
 						<div class="card-body">
 							<h4 class="card-title-carousel flex-item"><?php the_sub_field('heading'); ?></h4>
 							<p class="card-text-carousel text-center text-lg-left"><?php the_sub_field('content'); ?></p>
+							<div class="card-bullets">
 							<?php if(get_sub_field('below_content')): ?>
 								<h4>Start with…</h4>
 								<?php echo get_sub_field('below_content'); ?>
-							<?php endif; ?> 
+							<?php endif; ?>
+							</div>
 						</div>
 						<?php 
 						$link = get_sub_field('cta');
@@ -107,7 +115,11 @@
 
 		</div>
 
-		<div class="services-carousel-md d-none d-md-block d-lg-none">
+		<?php 
+			$carousel_counter = get_sub_field('heading_slider');
+			$carousel_id_md = str_replace(' ', '1', $carousel_counter) + '1' + $i++; ?>
+
+		<div class="services-carousel-md d-none d-md-block d-lg-none <?php echo $carousel_id_md; ?>">
 			
 
 			<?php if( have_rows('main_repeater') ): ?>
@@ -118,12 +130,14 @@
 					<div class="card">
 						<img src="<?php echo $image['url']; ?>" width="100" height="100" alt="<?php echo $image['alt']; ?>">
 						<div class="card-body">
-							<h4 class="card-title"><?php the_sub_field('heading'); ?></h4>
-							<p class="card-text text-center text-lg-left"><?php the_sub_field('content'); ?></p>
+							<h4 class="card-title-carousel"><?php the_sub_field('heading'); ?></h4>
+							<p class="card-text-carousel text-center text-lg-left"><?php the_sub_field('content'); ?></p>
+							<div class="card-bullets">
 							<?php if(get_sub_field('below_content')): ?>
 								<h4>Start with…</h4>
 								<?php echo get_sub_field('below_content'); ?>
 							<?php endif; ?> 
+							</div>
 						</div>
 						<?php 
 						$link = get_sub_field('cta');
@@ -141,7 +155,7 @@
 
 		</div>
 
-		<div class="services-carousel-sm d-block d-md-none">
+		<div class="services-carousel-sm d-block d-md-none <?php echo $carousel_id; ?>">
 			
 
 			<?php if( have_rows('main_repeater') ): ?>
@@ -154,10 +168,12 @@
 						<div class="card-body">
 							<h4 class="card-title"><?php the_sub_field('heading'); ?></h4>
 							<p class="card-text text-center text-lg-left"><?php the_sub_field('content'); ?></p>
+							<div class="card-bullets">
 							<?php if(get_sub_field('below_content')): ?>
 								<h4>Start with…</h4>
 								<?php echo get_sub_field('below_content'); ?>
 							<?php endif; ?> 
+							</div>
 						</div>
 						<?php 
 						$link = get_sub_field('cta');
@@ -194,3 +210,55 @@
 <?php if($layout = 'normal'): ?>
 	</div>
 <?php endif; ?>
+
+
+<script>
+	$(document).ready(function ($) {
+	//equal height function
+  $.fn.equalHeights = function () {
+    var max_height = 0;
+    $(this).each(function () {
+      max_height = Math.max($(this).height(), max_height);
+    });
+    $(this).each(function () {
+      $(this).height(max_height);
+    });
+  };
+
+  if ($(window).width() > 768) {
+    $(document).ready(function () {
+      $(".<?php echo $carousel_id; ?> .card-title-carousel").equalHeights();
+    });
+  }
+
+  if ($(window).width() > 768) {
+    $(document).ready(function () {
+      $(".<?php echo $carousel_id; ?> .card-text-carousel").equalHeights();
+    });
+  }
+
+  if ($(window).width() > 768) {
+    $(document).ready(function () {
+      $(".<?php echo $carousel_id; ?> .card-bullets").equalHeights();
+    });
+  }
+
+  if ($(window).width() > 768) {
+    $(document).ready(function () {
+      $(".<?php echo $carousel_id_md; ?> .card-title-carousel").equalHeights();
+    });
+  }
+
+  if ($(window).width() > 768) {
+    $(document).ready(function () {
+      $(".<?php echo $carousel_id_md; ?> .card-text-carousel").equalHeights();
+    });
+  }
+
+  if ($(window).width() > 768) {
+    $(document).ready(function () {
+      $(".<?php echo $carousel_id_md; ?> .card-bullets").equalHeights();
+    });
+  }
+});
+</script>

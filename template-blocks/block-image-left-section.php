@@ -36,8 +36,8 @@
 						</div>
 						<div class="col-12 col-md-6 text-container">
 							<?php the_sub_field('long_image_content'); ?>
-							<button type="button" data-title="homepage-get-freeproposal-when" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">Get a free proposal</button>
-							<button class="btn fp-btn fp-btn-orange tooltip" data-tippy-interactive="true" data-tippy-theme="dark" data-tippy-placement="bottom" data-tippy-html="#pop-up-form" data-tippy-trigger="click">Popup</button>
+							<!-- <button type="button" data-title="homepage-get-freeproposal-when" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">Get a free proposal</button> -->
+							<button type="button" class="btn fp-btn fp-btn-orange showpopup" data-tippy-interactive="true" data-tippy-theme="dark" data-tippy-placement="bottom" data-tippy-html="#pop-up-form" data-tippy-trigger="click">Get a free proposal</button>
 						</div>
 					</div>
 			</section>
@@ -87,15 +87,17 @@
 </div>
 
 <script>
-  tippy('.tooltip', { 
-	arrow: true,
-	trigger: "click",
-	interactive: true,
-	arrow: true,
-	placement: "bottom",
-	flip: false,
-	animation: "shift-toward",
-	inertia: true,
-	distance: 15,
-	arrowTransform: "scaleX(1.5)" });
+	tippy(".showpopup", {
+    html: ".embed-popup-form",
+    arrow: true,
+    trigger: "click",
+    interactive: true,
+    arrow: true,
+    placement: "bottom",
+    flip: false,
+    animation: "shift-toward",
+    inertia: true,
+    distance: 15,
+    arrowTransform: "scaleX(1.5)",
+  });
 </script>

@@ -44,7 +44,8 @@
                                 <?php if ( have_rows('faq_repeater') ) : while ( have_rows('faq_repeater') ) : the_row(); ?>
 								<?php
 										$faq_question = get_sub_field('faq_question');
-										$faq_question_id = str_replace(' ', '-', $faq_question) + '-' + $i++;
+										$faq_question_no_space = str_replace(' ', '', $faq_question);
+										$faq_question_id = preg_replace('/[^A-Za-z0-9\-]/', '', $faq_question_no_space); 
 										$faq_answer = get_sub_field('faq_answer');
 								?>
 

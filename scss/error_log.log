@@ -1,0 +1,119 @@
+11/17/21 11:01:24: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:02:41: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:02:57: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:03:10: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:03:20: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:04:21: style.scss - Undefined variable $color-orange: theme/template/header/_header.scss on line 81, at column 5
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:05:21: style.scss - Undefined variable $color-orange: theme/template/header/_header.scss on line 81, at column 5
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:07:22: style.scss - Undefined variable $color-orange: theme/template/header/_header.scss on line 81, at column 5
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:09:23: style.scss - Undefined variable $color-orange: theme/template/header/_header.scss on line 81, at column 5
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:10:45: style.scss - Undefined variable $color-orange: theme/template/header/_header.scss on line 81, at column 5
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:11:46: style.scss - Undefined variable $color-orange: theme/template/header/_header.scss on line 81, at column 5
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:13:47: style.scss - Undefined variable $color-orange: theme/template/header/_header.scss on line 81, at column 5
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:15:48: style.scss - Undefined variable $color-orange: theme/template/header/_header.scss on line 81, at column 5
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:18:06: style.scss - Undefined variable $color-orange: theme/template/header/_header.scss on line 81, at column 5
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:20:21: style.scss - Undefined variable $color-orange: theme/template/header/_header.scss on line 81, at column 5
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:23:51: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:24:52: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:26:53: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:28:55: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:30:56: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:31:42: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:31:42: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/17/21 11:32:43: style.scss - Undefined variable $color-white: theme/template/header/_header.scss on line 2, at column 3
+Call Stack:
+#0 import theme/template/header/_header.scss theme/template/_base.scss on line 1
+#1 import theme/template/_base.scss theme/_theme.scss on line 5
+#2 import theme/_theme.scss style.scss on line 14
+11/18/21 10:25:02: style.scss - `content/content` file not found for @import: theme/template/_base.scss on line 5, at column 1
+Call Stack:
+#0 import theme/template/_base.scss theme/_theme.scss on line 7
+#1 import theme/_theme.scss style.scss on line 14

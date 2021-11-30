@@ -83,3 +83,93 @@
     }
   }
 }
+
+.tippy-popper {
+  z-index: 20 !important;
+}
+.tippy-tooltip.dark-theme {
+  background: linear-gradient(180deg, $color-blue2 0%, #396bb1 100%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+}
+.tippy-popper[x-placement^="bottom"] .tippy-arrow {
+  border-bottom-color: $color-blue2;
+}
+.tippy-popper[x-placement^="top"] .tippy-arrow {
+  border-top-color: $color-blue2;
+}
+
+.proposal-popup h1,
+.proposal-popup h2 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 576px) {
+  .proposal-popup {
+    width: 440px;
+  }
+
+  .proposal-popup {
+    padding: 15px 10px;
+    max-width: 440px;
+    width: 100%;
+  }
+}
+
+.proposal-popup {
+  padding: 15px 10px;
+  max-width: 570px;
+  width: 100%;
+
+  h1,
+  h2 {
+    color: $color-white;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    color: $color-white;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .proposal-icon {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  ul.parsley-errors-list {
+    color: $color-grey;
+    text-align: left;
+  }
+
+  input.form-control {
+    box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  // Responsives
+  @media (min-width: $responsive-sm) {
+    width: 570px;
+
+    .col-sm-12,
+    .col-sm-6 {
+      padding: 0 5px;
+    }
+  }
+
+  @media (min-width: $responsive-md) {
+    padding: 30px 25px;
+  }
+}

@@ -124,10 +124,39 @@
     .slick-prev {
       width: 56px !important;
       height: 56px !important;
+      left: 0px;
     }
     .slick-next {
       width: 56px !important;
       height: 56px !important;
+      right: 0px;
+    }
+    @media (min-width: $responsive-xl) {
+      .slick-prev {
+        left: -25px;
+      }
+      .slick-next {
+        right: -25px;
+      }
+    }
+    .slick-next,
+    .slick-prev {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: transparent;
+      border: none;
+      outline: 0;
+      background: 0 0;
     }
     .slick-next,
     .slick-prev {
@@ -177,6 +206,11 @@
       color: $color-text;
       margin-bottom: 20px;
     }
+    .card-title {
+      text-align: center;
+      color: $color-text;
+      margin-bottom: 20px;
+    }
     .card-text-carousel {
       color: $color-text;
     }
@@ -194,15 +228,6 @@
     }
     .section-services-carousel .card-text {
       height: 109px;
-    }
-  }
-
-  @media (min-width: $responsive-xl) {
-    .slick-prev {
-      left: -25px;
-    }
-    .slick-next {
-      right: -25px;
     }
   }
 }

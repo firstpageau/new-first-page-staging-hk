@@ -250,7 +250,7 @@ ul.slick-dots {
 // Location section
 .section-location {
   .map-bg {
-    background-image: url("assets/img/img_location_map_sm.svg");
+    background-image: url("/wp-content/uploads/2021/11/img_location_map_sm.svg");
     height: 260px;
     background-repeat: no-repeat;
   }
@@ -345,7 +345,7 @@ ul.slick-dots {
 
   @media (min-width: $responsive-md) {
     .map-bg {
-      background-image: url("assets/img/img_location_map_md_lg.svg");
+      background-image: url("/wp-content/uploads/2021/11/img_location_map_md_lg.svg");
       height: 566px;
       margin-left: -25px;
     }
@@ -758,6 +758,72 @@ ul.slick-dots {
         font-size: 30px !important;
         line-height: 39.99px !important;
       }
+    }
+  }
+}
+
+// clients comments section
+.section-clients-comments {
+  max-width: 1200px;
+  margin: auto;
+
+  .clientComment:before {
+    content: "";
+    background: url(/wp-content/uploads/2021/11/icon-quote-red.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 14px;
+    width: 34px;
+    height: 27px;
+    top: 13px;
+  }
+  .clientComment {
+    font-size: 20.5px;
+    line-height: 35px;
+    margin-top: 60px;
+  }
+
+  .clientName {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  @media (min-width: $responsive-md) {
+    .clientComment {
+      font-size: 16.37px;
+      line-height: 24.91px;
+      min-height: 184px;
+    }
+    .clientComment:before {
+      left: -14px;
+    }
+    .clientName {
+      font-size: 18px;
+      line-height: 25px;
+      min-height: 65px;
+    }
+  }
+  @media (min-width: $responsive-lg) {
+    .clientComment:before {
+      left: -14px;
+    }
+    .clientComment {
+      font-size: 23px;
+      line-height: 35px;
+      min-height: 282px;
+    }
+    .clientName {
+      font-size: 25px;
+      line-height: 35px;
+      min-height: 110px;
+    }
+  }
+  @media (min-width: $responsive-xl) {
+    .clientComment {
+      min-height: 280px;
+    }
+    .clientName {
+      min-height: 75px;
     }
   }
 }

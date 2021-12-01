@@ -225,40 +225,28 @@
     });
   };
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id; ?> .card-title-carousel").equalHeights();
     });
-  }
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id; ?> .card-text-carousel").equalHeights();
     });
-  }
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id; ?> .card-bullets").equalHeights();
     });
-  }
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id_md; ?> .card-title-carousel").equalHeights();
     });
-  }
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id_md; ?> .card-text-carousel").equalHeights();
     });
-  }
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id_md; ?> .card-bullets").equalHeights();
     });
-  }
 });
 </script>

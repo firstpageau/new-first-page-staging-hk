@@ -54,7 +54,9 @@
 											</div>
 											<?php 
 											$link = get_sub_field('cta');
-											$link_title = $link['title'];
+											if($link_title){
+												$link_title = $link['title'];
+											}
 											if(get_sub_field('cta')): ?>
 											<div class="card-footer">
 												<a href="<?php the_sub_field('cta'); ?>"><?php echo esc_html( $link_title ); ?></a>
@@ -79,7 +81,8 @@
 
 		<?php 
 			$carousel_counter = get_sub_field('heading_slider');
-			$carousel_id = str_replace(' ', '-', $carousel_counter) + '-' + $i++; ?>
+			$carousel_id = preg_replace('/[^A-Za-z0-9\-]/', '', $carousel_counter); 
+			?>
 
 		<div class="services-carousel-lg d-none d-lg-block <?php echo $carousel_id; ?>">
 			
@@ -102,7 +105,9 @@
 						</div>
 						<?php 
 						$link = get_sub_field('cta');
-						$link_title = $link['title'];
+						if($link_title){
+							$link_title = $link['title'];
+						}
 						if(get_sub_field('cta')): ?>
 						<div class="card-footer">
 							<a href="<?php the_sub_field('cta'); ?>"><?php echo esc_html( $link_title ); ?></a>
@@ -117,7 +122,7 @@
 
 		<?php 
 			$carousel_counter = get_sub_field('heading_slider');
-			$carousel_id_md = str_replace(' ', '1', $carousel_counter) + '1' + $i++; ?>
+			$carousel_id_md = preg_replace('/[^A-Za-z0-9\-]/', '', $carousel_counter); ?>
 
 		<div class="services-carousel-md d-none d-md-block d-lg-none <?php echo $carousel_id_md; ?>">
 			
@@ -141,7 +146,9 @@
 						</div>
 						<?php 
 						$link = get_sub_field('cta');
-						$link_title = $link['title'];
+						if($link_title){
+							$link_title = $link['title'];
+						}
 						if(get_sub_field('cta')): ?>
 						<div class="card-footer">
 							<a href="<?php the_sub_field('cta'); ?>"><?php echo esc_html( $link_title ); ?></a>
@@ -177,7 +184,9 @@
 						</div>
 						<?php 
 						$link = get_sub_field('cta');
-						$link_title = $link['title'];
+						if($link_title){
+							$link_title = $link['title'];
+						}
 						if(get_sub_field('cta')): ?>
 						<div class="card-footer">
 							<a href="<?php the_sub_field('cta'); ?>"><?php echo esc_html( $link_title ); ?></a>
@@ -225,40 +234,33 @@
     });
   };
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id; ?> .card-title-carousel").equalHeights();
     });
-  }
+  
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id; ?> .card-text-carousel").equalHeights();
     });
-  }
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id; ?> .card-bullets").equalHeights();
     });
-  }
+  
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id_md; ?> .card-title-carousel").equalHeights();
     });
-  }
+  
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id_md; ?> .card-text-carousel").equalHeights();
     });
-  }
+  
 
-  if ($(window).width() > 768) {
     $(document).ready(function () {
       $(".<?php echo $carousel_id_md; ?> .card-bullets").equalHeights();
     });
-  }
+  
 });
 </script>
